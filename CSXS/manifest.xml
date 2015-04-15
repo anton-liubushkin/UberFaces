@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<ExtensionManifest ExtensionBundleId="uberfaces" ExtensionBundleName="uberfaces" ExtensionBundleVersion="1.0.0" Version="4.0">
+  <Author>Anton Lyubushkin [nvkzNemo]</Author> 
+  <Contact mailto="nvkz.nemo@gmail.com" />
+  <Abstract>
+        <![CDATA[
+Free Photoshop extension for generate random users into your PSDs
+        ]]>
+  </Abstract>
+  <ExtensionList>
+    <Extension Id="com.nvkznemo.uberfaces.extension" Version="1.0.0"/>
+  </ExtensionList>
+  <ExecutionEnvironment>
+    <HostList>
+      <Host Name="PHSP" Version="[14.0,15.9]"/>
+      <Host Name="PHXS" Version="[14.0,15.9]"/>
+    </HostList>
+    <LocaleList>
+      <Locale Code="All"/>
+    </LocaleList>
+    <RequiredRuntimeList>
+      <RequiredRuntime Name="CSXS" Version="4.0"/>
+    </RequiredRuntimeList>
+  </ExecutionEnvironment>
+  <DispatchInfoList>
+    <Extension Id="com.nvkznemo.uberfaces.extension">
+      <DispatchInfo>
+        <Resources>
+          <MainPath>./index.html</MainPath>
+          <ScriptPath>./host/main.jsx</ScriptPath>
+        </Resources>
+        <UI>
+          <Type>Panel</Type>
+          <Menu>UberFaces</Menu>
+          <Geometry>
+            <Size>
+              <Height>290</Height>
+              <Width>190</Width>
+            </Size>
+            <MinSize>
+                <Height>290</Height>
+                <Width>190</Width>
+            </MinSize>
+            <MaxSize>
+                <Height>290</Height>
+                <Width>190</Width>
+            </MaxSize>
+          </Geometry>
+          <Icons>
+            <Icon Type="Normal">./normal.png</Icon>
+            <Icon Type="DarkNormal">./darknormal.png</Icon> 
+          </Icons>
+        </UI>
+      </DispatchInfo>
+    </Extension>
+  </DispatchInfoList>
+</ExtensionManifest>

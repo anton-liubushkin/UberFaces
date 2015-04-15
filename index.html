@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link id="ppstyle" rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/CSInterface-4.2.0.js"></script>
+    <script src="./js/themeSwitcher.js"></script>
+</head>
+
+<body onLoad="onLoaded()">
+    <div class="wrapper">
+
+		<div class="screens">
+		
+			<div class="screen screen1">
+               
+                <div class="floor20">
+                    <div class="genderSel">
+                        <input id="gender2" name="gender" type="radio" value="men">
+                        <label for="gender2">Men</label>
+                        
+                        <input id="gender1" name="gender" type="radio" value="both" checked>
+                        <label for="gender1">Both</label>
+
+                        <input id="gender3" name="gender" type="radio" value="women">
+                        <label for="gender3">Women</label>
+                    </div>
+                </div>
+                
+			    <div class="floor">
+                    <div id="image"></div>
+                </div>
+
+                <div class="floor20">
+                    <input id="username" type="text" value="...">
+                </div>
+                
+                <div class="darkbox">
+                    <button id="single" title="Place single userpic">
+                        <img src="img/plus-b.png" width="24" height="24" alt="">
+                    </button>
+                    <button id="multi" title="Place any userpics to each selected layer">
+                        <img src="img/multi-b.png" width="24" height="24" alt="">
+                    </button>
+                </div>
+                
+			</div>
+			
+		</div>
+
+	</div>
+    
+    <script src="./js/jquery-1.9.1.min.js"></script>
+    <script src="./js/main.js"></script>
+
+</body>
+
+</html>
